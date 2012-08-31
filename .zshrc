@@ -70,4 +70,7 @@ export PATH=$HOME/.rvm/gems/ruby-1.9.3-p194/bin:$HOME/.rvm/gems/ruby-1.9.3-p194@
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
+# aliases
+source ~/.aliases
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

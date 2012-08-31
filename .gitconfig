@@ -21,3 +21,6 @@
   interactive = auto
   status = auto
   ui = auto
+[core]
+	excludesfile = /Users/hvitor/.gitignore
+	editor = /usr/bin/vim

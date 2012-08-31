@@ -1,0 +1,4 @@
+alias br="be rspec"
+alias rm_cassettes_spec="rm -rf spec/cassettes"
+alias rm_cassettes_features="rm -rf features/cassettes"
+alias rm_cassettes="rm_cassettes_spec && rm_cassettes_features"
