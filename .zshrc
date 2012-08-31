@@ -24,7 +24,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -66,6 +66,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export RUBYOPT=-Ku
-export PATH=/Users/hvitor/.rvm/gems/ruby-1.9.3-p194/bin:/Users/hvitor/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/hvitor/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/hvitor/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+export PATH=$HOME/.rvm/gems/ruby-1.9.3-p194/bin:$HOME/.rvm/gems/ruby-1.9.3-p194@global/bin:$HOME/.rvm/rubies/ruby-1.9.3-p194/bin:$HOME/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
