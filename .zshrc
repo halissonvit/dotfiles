@@ -30,7 +30,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
-plugins=(rails3 git ruby brew bundler rvm)
+plugins=(autojump rails3 git ruby brew bundler rvm)
 ## rails3
 ## rc - rails console
 ## rd - rails destroy
