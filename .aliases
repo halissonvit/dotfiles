@@ -1,5 +1,5 @@
-alias rm_cassettes_spec="rm -rf spec/cassettes"
-alias rm_cassettes_features="rm -rf features/cassettes"
-alias rm_cassettes="rm_cassettes_spec && rm_cassettes_features"
-
 alias vim_shortcuts="open $DOT_FILES/vim-shortcuts.png"
+
+alias install_spoof_mac="git clone https://github.com/feross/SpoofMAC.git ~/SpoofMAC"
+alias generate_mac_address="openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'"
+alias change_mac_address="sudo python ~/SpoofMAC/SpoofMAC.py en1 `generate_mac_address`"

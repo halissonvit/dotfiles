@@ -1,20 +1,21 @@
 [alias]
-	st = status -sb
-	co = checkout
-	ci = commit
+  st = status -sb
+  co = checkout
+  ci = commit
   br = branch
-	d = diff
+  d = diff
   dc = diff --cached
   ap = add -p
   l=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   pr = pull --rebase
   recover = reset --hard
 [user]
-	name = Halisson Bruno
-	email = halissonvit@gmail.com
+  name = Halisson Bruno
+  email = halissonvit@gmail.com
 [github]
-	user = halisson
-	token = halissonvit
+  user = halisson
+  token = halissonvit
 [color]
   branch = auto
   diff = auto
@@ -22,5 +23,5 @@
   status = auto
   ui = auto
 [core]
-	excludesfile = /Users/hvitor/.gitignore
-	editor = /usr/bin/vim
+  excludesfile = /Users/hvitor/.gitignore
+  editor = /usr/bin/vim

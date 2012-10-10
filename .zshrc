@@ -77,3 +77,4 @@ export PATH=$HOME/.rvm/gems/ruby-1.9.3-p194/bin:$HOME/.rvm/gems/ruby-1.9.3-p194@
 source ~/.aliases
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+EDITOR=vim
