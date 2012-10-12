@@ -11,8 +11,8 @@ restart() {
 }
 
 seed_iba() {
-  curl http://localhost:5100/seed
-  curl http://localhost:5500/seed
+  curl -u 'api_admin:password' --basic http://localhost:5100/seed
+  curl -u 'api_admin:password' --basic http://localhost:5500/seed
 }
 
 export RUBYOPT=-Ku
