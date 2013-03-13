@@ -33,6 +33,7 @@ sudo apt-get install libdvdcss
 sudo apt-get install vim
 sudo apt-get install terminator
 sudo apt-get install curl
+sudo apt-get install xclip
 
 #Dropbox
 wget "https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.4.0_amd64.deb"
