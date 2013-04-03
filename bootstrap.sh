@@ -5,26 +5,32 @@ cd tmp
 echo # Writting an apt config file
 sudo sh -c 'echo "APT {\nGet {\nAssume-Yes \"true\";\nFix-Broken \"true\";\n};\n};" > /etc/apt/apt.conf'
 
+echo # Adding repositories
+sudo apt-add-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+sudo add-apt-repository ppa:noobslab/initialtesting
+sudo add-apt-repository ppa:indicator-multiload/stable-daily
+sudo add-apt-repository ppa:gnome3-team/gnome3 
+sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository ppa:jd-team/jdownloader 
+sudo apt-get update
+
+echo # Updating ubuntu
+sudo apt-get -y upgrade && sudo apt-get dist-upgrade && sudo apt-get -y autoclean && sudo apt-get -y autoremove
+
 echo # Showing name on Status Bar
 gsettings set com.canonical.indicator.session show-real-name-on-panel true
 
 echo # Show Battery percentage
-sudo add-apt-repository ppa:noobslab/initialtesting
-sudo apt-get update
 sudo apt-get install indicator-power
 
 echo # HW temperature
 sudo apt-get install lm-sensors hddtemp psensor
 
 echo # Flash Plugin
-sudo apt-add-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
-sudo apt-get update && sudo apt-get install flashplugin-installer
+sudo apt-get install flashplugin-installer
 
 echo # Compression Decompression Tools
 sudo apt-get install p7zip-rar p7zip-full unace unrar zip unzip sharutils rar uudeview mpack lha arj cabextract file-roller
-
-echo # Updating ubuntu
-sudo apt-get update && sudo apt-get -y upgrade && sudo apt-get dist-upgrade && sudo apt-get -y autoclean && sudo apt-get -y autoremove
 
 echo # Installing Essential Softwares
 sudo apt-get install ubuntu-restricted-extras
@@ -48,21 +54,19 @@ sudo apt-get -f install
 echo #TeamViewer
 
 echo #CPU Memory Indicator Applet
-sudo add-apt-repository ppa:indicator-multiload/stable-daily
-sudo apt-get update
 sudo apt-get install indicator-multiload
 
 echo #Nautilus
-sudo add-apt-repository ppa:gnome3-team/gnome3 && sudo apt-get update && sudo apt-get dist-upgrade && killall nautilus
+killall nautilus
 
 #Steam
 #sudo apt-get install steam
 
 echo # Java
-sudo add-apt-repository ppa:webupd8team/java && sudo apt-get update && sudo apt-get install oracle-jdk7-installer -y
+sudo apt-get install oracle-jdk7-installer -y
 
 echo # JDownload
-sudo add-apt-repository ppa:jd-team/jdownloader && sudo apt-get update && sudo apt-get install jdownloader -y
+sudo apt-get install jdownloader -y
 
 echo # Other util softwares
 sudo apt-get install vlc deluge bleachbit xchat trimage filezilla -y
