@@ -12,6 +12,9 @@ sudo add-apt-repository ppa:indicator-multiload/stable-daily
 sudo add-apt-repository ppa:gnome3-team/gnome3 
 sudo add-apt-repository ppa:webupd8team/java
 sudo add-apt-repository ppa:jd-team/jdownloader 
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
+sudo add-apt-repository "deb http://linux.dropbox.com/ubuntu precise main"
+
 sudo apt-get update
 
 echo # Updating ubuntu
@@ -43,8 +46,7 @@ sudo apt-get install xclip
 sudo apt-get install autojump
 
 echo #Dropbox
-wget "https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.4.0_amd64.deb"
-sudo dpkg -i **dropbox**.deb
+sudo apt-get install nautilus-dropbox
 
 echo #Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
