@@ -11,8 +11,8 @@
   pr = pull --rebase
   recover = reset --hard
 [user]
-  name = Halisson Bruno
-  email = halissonvit@gmail.com
+	name = Halisson Vitor
+	email = halissonvit@gmail.com
 [github]
   user = halisson
   token = halissonvit
