@@ -3,7 +3,7 @@ mkdir tmp
 cd tmp
 
 echo # Writting an apt config file
-sudo sh -c 'echo "APT {\nGet {\nAssume-Yes \"true\";\nFix-Broken \"true\";\n};\n};" > /etc/apt/apt.conf'
+sudo sh -c 'echo "APT {\nGet {\nAssume-Yes \"true\";\nFix-Broken \"true\";\nForce-Yes \"true\"\n};\n};" > /etc/apt/apt.conf'
 
 echo # Adding repositories
 sudo apt-add-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
