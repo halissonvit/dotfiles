@@ -10,6 +10,7 @@
 	lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	pr = pull --rebase
 	recover = reset --hard
+	dangerously-clean-all-branches = "!git branch | egrep -v '(^\\*|master|dev|main)' | xargs -r git branch -D"
 	clean-all-branches = "!git branch | egrep -v '(^\\*|master|dev|main)' | xargs -r git branch -d"
 	clean-merged-branches = "!git branch --merged | egrep -v '(^\\*|master|dev|main)' | xargs -r git branch -d"
 [user]
